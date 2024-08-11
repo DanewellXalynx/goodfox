@@ -62,10 +62,16 @@ user_pref("browser.safebrowsing.downloads.remote.url", "");
 user_pref("browser.safebrowsing.downloads.remote.block_potentially_unwanted", false);
 user_pref("browser.safebrowsing.downloads.remote.block_uncommon", false);
 
-//Tracking Protection//
+//Tracking and Fingerprinting prootection//
 user_pref("privacy.resistFingerprinting", true);
 user_pref("webgl.disabled", true);
+user_pref("privacy.resistFingerprinting.pbmode", true);
 user_pref("browser.contentblocking.category", "strict");
+user_pref("privacy.window.maxInnerWidth", 1600);
+user_pref("privacy.window.maxInnerHeight", 900);
+user_pref("privacy.resistFingerprinting.letterboxing", true);
+user_pref("browser.display.use_system_colors", false);
+user_pref("privacy.spoof_english", 1);
 
 //Clear data on shutdown//
 user_pref("privacy.clearOnShutdown.history", true);
@@ -75,3 +81,12 @@ user_pref("privacy.clearOnShutdown.cookies", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
+
+//Location Privacy//
+/*Geolocation*/
+user_pref("geo.provider.ms-windows-location", false); //Windows//
+user_pref("geo.provider.use_corelocation", false); //macOS//
+user_pref("geo.provider.use_gpsd", false); //GNU/Linux//
+user_pref("geo.provider.use_geoclue", false); //FF102+ GNU/Linux// 
+user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
+   // user_pref("privacy.pa
