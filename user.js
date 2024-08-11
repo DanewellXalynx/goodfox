@@ -44,6 +44,17 @@ user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
+/*search suggestions*/
+user_pref("browser.search.suggest.enabled", false);
+user_pref("browser.urlbar.suggest.searches", false);
+user_pref("browser.urlbar.trending.featureGate", false);
+user_pref("browser.urlbar.addons.featureGate", false); //FF115+//
+user_pref("browser.urlbar.mdn.featureGate", false); //FF117+//
+user_pref("browser.urlbar.pocket.featureGate", false); //FF116+//
+user_pref("browser.urlbar.weather.featureGate", false); //FF108+//
+user_pref("browser.urlbar.yelp.featureGate", false); //FF124+//
+/*Autofill data*/
+user_pref("browser.formfill.enable", false);
 
 //Disable Recommendations//
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
@@ -89,4 +100,3 @@ user_pref("geo.provider.use_corelocation", false); //macOS//
 user_pref("geo.provider.use_gpsd", false); //GNU/Linux//
 user_pref("geo.provider.use_geoclue", false); //FF102+ GNU/Linux// 
 user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
-   // user_pref("privacy.pa
