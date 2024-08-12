@@ -43,7 +43,6 @@ user_pref("extensions.pocket.enabled", false);
 user_pref("browser.preferences.moreFromMozilla", false);
 user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 user_pref("browser.newtabpage.activity-stream.default.sites", "");
-user_pref("browser.newtabpage.activity-stream.showSponsoredTopSites", false);
 /*search suggestions*/
 user_pref("browser.search.suggest.enabled", false);
 user_pref("browser.urlbar.suggest.searches", false);
