@@ -30,6 +30,12 @@ ___________________________
 SEC-6 : Location Privacy
   6.1 : Geolocation
 ___________________________
+SEC-7 : HTTPS
+  7.1 : SSL/TLS
+  7.2 : OCSP
+  7.3 : CERTS/HPKP
+  7.4 : HTTPS-ONLY
+___________________________
 */
 
 // [SEC-1] Disable telemetry, studies, crash reports and similar//
@@ -132,4 +138,17 @@ user_pref("geo.provider.use_gpsd", false); //GNU/Linux//
 user_pref("geo.provider.use_geoclue", false); //FF102+ GNU/Linux// 
 user_pref("geo.provider.network.url", "https://location.services.mozilla.com/v1/geolocate?key=%MOZILLA_API_KEY%");
 
-//
+// [SEC-7] HTTPS //
+/*[7.1] SSL/TLS */
+user_pref("security.ssl.require_safe_negotiation", true);
+user_pref("security.tls.enable_0rtt_data", false);\
+/*[7.2] OCSP */
+user_pref("security.OCSP.enabled", 1);
+user_pref("security.OCSP.require", true);
+/*[7.3] CERTS/HPKP */
+user_pref("security.cert_pinning.enforcement_level", 2);
+user_pref("security.remote_settings.crlite_filters.enabled", true);
+user_pref("security.pki.crlite_mode", 2);
+/*[7.4] HTTPS-ONLY*/
+user_pref("dom.security.https_only_mode", true);
+user_pref("dom.security.https_only_mode_ever_enabled", true);
