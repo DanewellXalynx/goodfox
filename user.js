@@ -26,6 +26,8 @@ SEC-4 : Tracking and Fingerprinting protection
   4.3 : Enhanced Tracking Protection
 ___________________________
 SEC-5 : Clear Data on Shutdown
+  5.1 : Clear data
+  5.2 : Sanitizing
 ___________________________
 SEC-6 : Location Privacy
   6.1 : Geolocation
@@ -144,13 +146,19 @@ user_pref("webgl.disabled", true);
 user_pref("browser.contentblocking.category", "strict");
 
 // [SEC-5] Clear data on shutdown//
+/*[5.1] clear data*/
 user_pref("privacy.clearOnShutdown.history", true);
 user_pref("privacy.clearOnShutdown.formdata", true);
 user_pref("privacy.clearOnShutdown.cache", true);
 user_pref("privacy.clearOnShutdown.cookies", true);
+user_pref("privacy.clearOnShutdown.session", true);
 user_pref("privacy.clearOnShutdown_v2.cache", true);
 user_pref("privacy.clearOnShutdown_v2.cookiesAndStorage", true);
 user_pref("privacy.clearOnShutdown_v2.historyFormDataAndDownloads", true);
+/*[5.2] Sanitizing*/
+user_pref("privacy.clearSiteData.cache", true);
+user_pref("privacy.clearSiteData.cookiesAndStorage", true;
+user_pref("privacy.clearSiteData.historyFormDataAndDownloads", true;
 
 // [SEC-6] Location Privacy//
 /*[6.1] Geolocation*/
