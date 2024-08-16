@@ -38,6 +38,8 @@ SEC-7 : HTTPS
   7.3 : CERTS/HPKP
   7.4 : HTTPS-ONLY
 ___________________________
+SEC-8 : Passwords
+___________________________
 */
 
 // [SEC-1] Disable telemetry, studies, crash reports and similar//
@@ -96,6 +98,7 @@ user_pref("browser.formfill.enable", false);
 user_pref("extensions.htmlaboutaddons.recommendations.enabled", false);
 user_pref("browser.discovery.enabled", false);
 user_pref("browser.shopping.experience2023.enabled", false);
+
 // [SEC-3] Disable google code//
 /*[3.1] Google Analytics*/
 user_pref("extensions.getAddons.showPane", false)
@@ -182,3 +185,7 @@ user_pref("security.pki.crlite_mode", 2);
 /*[7.4] HTTPS-ONLY*/
 user_pref("dom.security.https_only_mode", true);
 user_pref("dom.security.https_only_mode_ever_enabled", true);
+
+// [SEC-8] Passwords//
+user_pref("signon.autofillForms", false);\
+user_pref("signon.formlessCapture.enabled", false);
