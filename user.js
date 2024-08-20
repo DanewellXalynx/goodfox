@@ -189,3 +189,7 @@ user_pref("dom.security.https_only_mode_ever_enabled", true);
 // [SEC-8] Passwords//
 user_pref("signon.autofillForms", false);\
 user_pref("signon.formlessCapture.enabled", false);
+
+// My Overrides //
+//type in overrides here//
+// End : `Goodfox
