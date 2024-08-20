@@ -40,6 +40,8 @@ SEC-7 : HTTPS
 ___________________________
 SEC-8 : Passwords
 ___________________________
+SEC-9 : Disable proprietary libraries (coming soon)
+___________________________
 */
 
 // [SEC-1] Disable telemetry, studies, crash reports and similar//
@@ -187,8 +189,11 @@ user_pref("dom.security.https_only_mode", true);
 user_pref("dom.security.https_only_mode_ever_enabled", true);
 
 // [SEC-8] Passwords//
-user_pref("signon.autofillForms", false);\
+user_pref("signon.autofillForms", false);
 user_pref("signon.formlessCapture.enabled", false);
+
+// [SEC-9] Disable proprietary code (coming soon) //
+
 
 // My Overrides //
 //type in overrides here//
